@@ -1,0 +1,29 @@
+[33mcommit 17934bbd88cff36632ec32a824e73edbabec28dc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Shivam More <shivam9064470570@gmail.com>
+Date:   Thu Mar 5 03:42:42 2026 +0530
+
+    MAse-net and vit model build
+
+[33mcommit df118393b4697bfbce57b69f9a5d8ca329ec590f[m[33m ([m[1;31morigin/older[m[33m, [m[1;31morigin/new-development[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Shivam More <shivam9064470570@gmail.com>
+Date:   Sun Feb 8 15:49:16 2026 +0530
+
+    backend api changes
+
+[33mcommit 663adc2506620a18e29a836367b8764ef197070d[m
+Author: Shivam More <shivam9064470570@gmail.com>
+Date:   Sun Feb 8 15:29:54 2026 +0530
+
+    fix dependencies
+
+[33mcommit 4af87cdf81f53bbf58de3f65db795e1864db2bea[m
+Author: Shivam More <shivam9064470570@gmail.com>
+Date:   Sun Feb 8 15:26:31 2026 +0530
+
+    python version added
+
+[33mcommit 1eec62520b047101b381d7552edff435af128491[m
+Author: Shivam More <shivam9064470570@gmail.com>
+Date:   Sun Feb 8 14:30:03 2026 +0530
+
+    Initial commit :Logic AI driven disease identifier

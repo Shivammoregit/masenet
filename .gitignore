@@ -1,0 +1,8 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+plantvillage/
+tests/
+mase_model.pth
+plant_model.pth

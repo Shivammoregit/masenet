@@ -1,0 +1,86 @@
+{
+  "Corn/img1.jpg": {
+  "soil_type": "loamy",
+  "temperature": "28",
+  "humidity": "76",
+  "moisture": "61"
+},
+  "Corn/img2.jpg": {
+  "soil_type": "loamy",
+  "temperature": "30",
+  "humidity": "68",
+  "moisture": "55"
+},
+  "Corn/img3.jpg":{
+  "soil_type": "clay_loam",
+  "temperature": "29",
+  "humidity": "80",
+  "moisture": "67"
+},
+  "Corn/img4.png": {
+  "soil_type": "loamy",
+  "temperature": "32",
+  "humidity": "64",
+  "moisture": "42"
+},
+  "Potato/img1.png": {
+  "soil_type": "sandy_loam",
+  "temperature": "27",
+  "humidity": "78",
+  "moisture": "58"
+},
+  "Potato/img2.jpg": {
+  "soil_type": "sandy_loam",
+  "temperature": "27",
+  "humidity": "78",
+  "moisture": "58"
+},
+  "Potato/img3.jpg": {
+  "soil_type": "loamy",
+  "temperature": "26",
+  "humidity": "74",
+  "moisture": "60"
+},
+  "Potato/img4.jpg": {
+  "soil_type": "loamy",
+  "temperature": "27",
+  "humidity": "76",
+  "moisture": "62"
+},
+  "Tomato/img1.jpg": {
+  "soil_type": "clay_loam",
+  "temperature": "27",
+  "humidity": "80",
+  "moisture": "65"
+},
+  "Tomato/img2.png": {
+  "soil_type": "clay_loam",
+  "temperature": "30",
+  "humidity": "81",
+  "moisture": "69"
+},
+  "Tomato/img3.png": {
+  "soil_type": "clay_loam",
+  "temperature": "31",
+  "humidity": "77",
+  "moisture": "64"
+},
+  "Tomato/img4.jpg": {
+  "soil_type": "loamy",
+  "temperature": "26",
+  "humidity": "73",
+  "moisture": "57"
+},
+  "Squash/img1.jpg": {
+  "soil_type": "loamy",
+  "temperature": "25",
+  "humidity": "82",
+  "moisture": "68"
+},
+  "Squash/img2.png": {
+  "soil_type": "loamy",
+  "temperature": "25",
+  "humidity": "82",
+  "moisture": "68"
+}
+}
