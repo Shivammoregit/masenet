@@ -1,8 +1,31 @@
+---
+title: MaseNet Plant Detector API
+colorFrom: green
+colorTo: yellow
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # AgriVision: Plant Disease Detector
 
 AgriVision is a full-stack plant disease inference demo:
 - A **FastAPI backend** that loads a custom-trained ViT model checkpoint and predicts top classes from leaf images.
 - A **plain HTML/CSS/JS frontend** for upload + preset image testing, with modern result cards and confidence bars.
+
+## Deploy On Hugging Face Spaces (Docker)
+
+1. Create a new Space on Hugging Face with SDK set to `Docker`.
+2. Push this repository to that Space repo.
+3. The Space will build using `Dockerfile` and start the API on port `7860`.
+4. The app downloads model weights from:
+   - `https://huggingface.co/shivamhface/masenet-plant/resolve/main/mase_model.pth`
+
+Optional Space variables:
+- `MODEL_WEIGHTS_URL` (override default model URL)
+- `MODEL_WEIGHTS_AUTH_TOKEN` (private URL bearer token)
+- `MODEL_WEIGHTS_SHA256` (checksum validation)
+- `MODEL_DEVICE` (default `cpu`)
 
 ---
 
@@ -10,8 +33,8 @@ AgriVision is a full-stack plant disease inference demo:
 
 Core runtime files:
 - `server.py` - FastAPI API, model loading, inference, validation, endpoints.
-- `class_names.json` - Ordered class label list used by inference.
-- `plant_model.pth` - Trained model weights checkpoint.
+- `mase_class_names.json` - Ordered class label list used by inference.
+- `mase_model.pth` - Trained model weights checkpoint (optional local cache when `MODEL_WEIGHTS_URL` is used).
 - `disease_knowledge.py` - Disease metadata helper module (for enrichment/extension).
 - `index.html`, `styles.css`, `app.js` - Frontend demo UI.
 - `requirements.txt` - Runtime Python dependencies.
@@ -35,9 +58,9 @@ Local Python artifacts (gitignored by default):
 
 ### 1) Backend inference pipeline
 In `server.py`, the backend:
-1. Loads class labels from `class_names.json`.
-2. Builds `ViTForImageClassification` based on `google/vit-base-patch16-224`.
-3. Loads custom checkpoint weights from `plant_model.pth`.
+1. Loads class labels from `mase_class_names.json`.
+2. Builds `MASENet` model architecture.
+3. Loads weights from local `mase_model.pth` or downloads from `MODEL_WEIGHTS_URL`.
 4. Applies preprocessing (`Resize(224,224)` + `ToTensor`).
 5. Runs forward pass, softmax, and returns top-3 predictions.
 

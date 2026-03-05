@@ -1,0 +1,11 @@
+.git
+.gitignore
+.pytest_cache
+__pycache__
+*.pyc
+venv
+.venv
+tests
+plantvillage
+mase_model.pth
+plant_model.pth
